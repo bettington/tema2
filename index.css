@@ -1,0 +1,246 @@
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+}
+
+header{
+  background-image: url('img/forsidebillede.jpg');
+  background-repeat: no-repeat;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+header:before{
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background-color: rgba(0,0,0,0.3);
+}
+
+header h1{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  color: white;
+  text-align: center;
+  font-size: 38px;
+}
+
+
+nav{
+  max-height: 0px;
+  overflow: hidden;
+  list-style-type: none;
+  transition: 300ms ease;
+  position:relative;
+  z-index: 3;
+  text-align: center;
+}
+
+
+nav ul{
+  padding: 30px;
+  list-style-type: none;
+  background-color: #2B2B2B;
+}
+
+li {
+  color: rgba(265,265,265,1.0);
+  padding-top: 2%
+}
+
+a{
+  text-decoration: none;
+  color: inherit;
+  position: relative;
+  z-index: 3;
+}
+
+label{
+  padding: 20px;
+  display: inline-block;
+  cursor: pointer;
+  position: absolute;
+  z-index: 4;
+  top: 0;
+  right: 0;
+}
+
+input[type="checkbox"]:checked + label + nav{
+  max-height: 400px;
+}
+.arrow{
+  position: absolute;
+  transform: translate(-50%,-50%);
+  top:90%;
+  left:50%;
+  z-index: 3;
+}
+
+.active{
+  font-weight: 700;
+}
+
+.logo{
+  color: white;
+  padding: 20px;
+  padding-right: 0px;
+  margin:0;
+  position: relative;
+  z-index: 4;
+}
+/*img{
+  max-width: 100%;
+}*/
+
+main{
+  background-color: #2B2B2B;
+}
+
+main h1{
+  color: white;
+  padding: 15%;
+  text-align: center;
+  font-weight: 700;
+  font-size: 28px;
+}
+
+article{
+  color: white;
+  padding: 0 5%;
+  text-align: center;
+  padding-bottom: 15%;
+  font-size: 12px;
+}
+
+figure{
+  margin-left: 10%;
+  width: 205px;
+}
+figure img{
+  max-width: 100px;
+  height: auto;
+  display: inline;
+}
+
+footer article{
+  color: black;
+  padding-bottom: 0;
+}
+
+footer article p{
+  padding: 10px;
+}
+
+footer figure{
+  position: relative;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin-left: 0;
+  margin-top: 50px;
+}
+
+.footerpics {
+  max-width: 15px;
+  height: auto;
+  padding: 20px 0;
+
+}
+.figurepadding{
+  padding: 0 0;
+  margin-left: 0;
+  margin-top:20px;
+  max-width: 40px;
+}
+
+.navwide{
+  display: none;
+}
+.wide{
+  display: none;
+}
+
+@media screen and (min-width: 768px){
+  main h1{
+    padding-top: 75px;
+    padding-bottom: 25px;
+  }
+  main article{
+    margin: 0 20%;
+    padding-bottom: 75px;
+  }
+
+  label{
+    display: none;
+  }
+
+  header nav li{
+    display: inline;
+    padding-right: 6px;
+  }
+
+  h2{
+    margin-bottom: 20px;
+  }
+  nav ul{
+    background: none;
+  }
+
+  .widehide{
+    display: none;
+  }
+
+.footertextslim{
+    display: none;
+  }
+.logo{
+  float: left;
+}
+
+.navwide{
+  display: inline;
+  float:right;
+  list-style-type: none;
+  position: relative;
+  z-index: 5;
+  font-size: 14px;
+  overflow:inherit;
+}
+.wide{
+  display: inline;
+}
+.widelist1{
+  float:left;
+  font-size: 12px;
+  padding-left: 7%;
+}
+.widelist2{
+  float:left;
+  margin-left: 5%;
+}
+.figurepadding{
+  float: left;
+  top:0;
+  right:0;
+  bottom:0;
+  left:0;
+  margin-left: 10%;
+  margin-top: 25px;
+}
+
+.logowide{
+  max-width: 18px;
+}
+
+footer article section{
+margin-left: 20%
+}
+}
